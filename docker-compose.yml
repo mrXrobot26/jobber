@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: jobber-auth
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Admin123*
+    ports:
+      - 5432:5432
