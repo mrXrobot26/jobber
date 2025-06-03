@@ -39,13 +39,13 @@
       }
     },
     "generate-types": {
-      "command": "prisma generate",
+      "command": "prisma generate --schema=Prisma/schema.prisma",
       "options": {
           "cwd": "apps/jobber-auth"        
         }
     },
     "migrate-prisma": {
-      "command": "prisma migrate dev",
+      "command": "prisma migrate dev --schema=Prisma/schema.prisma",
       "options": {
         "cwd": "apps/jobber-auth"
       }
